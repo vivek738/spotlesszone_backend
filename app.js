@@ -23,6 +23,8 @@ app.use(cors())
 
 // for making images storing directory public
 app.use(express.static(__dirname + "/Stores"));
+
+
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
